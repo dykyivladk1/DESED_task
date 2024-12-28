@@ -101,6 +101,9 @@ For comfort understanding how to apply the models, I have made this simple table
 | **M2DWrapper**    | **(batch_size, 1, num_freq_bins, num_time_bins)** |
 
 
+
+ATST, fPaSST I will add soon, but I have already processed them!
+
 ### Results
 - BEATS Model provided by DESED_task:  
   **PSDS_scenario 1:** 0.463
