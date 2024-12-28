@@ -80,6 +80,18 @@ To test the weakly-supervised BEATS model:
 ```bash
 python train_pretrained.py --test_from_checkpoint /path/to/new_model.pt
 ```
+
+
+### Testing ASiT model
+
+First of all, I have adjusted the baseline to work with the ASiT from: https://github.com/fschmid56/PretrainedSED/tree/main
+
+This includes, adjusting the dataset implementation in `extract_embeddings.py` to be sure, that the input samples match with required shape of the forward method of the model.
+
+Then, I have added a folder `recipes/asit`, where are files from the repository, changed the import statements, so they match with correct pathes of modules.
+
+For running this model perform basically the same steps as with BEATs model, do not forget to place the weights in the corresponding folder `pretrained_models`.
+
 For comfort understanding how to apply the models, I have made this simple table:
 | **Model**        | **Input Shape**                                |
 |-------------------|-----------------------------------------------|
