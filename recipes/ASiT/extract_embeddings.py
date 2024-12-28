@@ -165,7 +165,7 @@ if __name__ == "__main__":
         # use pannss as additional feature
         from local.asit.ASIT_wrapper import ASiTWrapper
 
-
+        asit = ASiTWrapper()
         pretrained = PredictionsWrapper(asit, checkpoint="ASIT_strong_1")
 
         pretrained.load_state_dict(
