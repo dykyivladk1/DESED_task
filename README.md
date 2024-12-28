@@ -86,5 +86,5 @@ python train_pretrained.py --test_from_checkpoint /path/to/new_model.pt
   **PSDS_scenario 1:** 0.463
 - Weakly-Supervised BEATS Model:  
   **PSDS_scenario 1:** 0.47
-
+- ATST, fPaSST, ASiT, M2D models soon...
 ---
