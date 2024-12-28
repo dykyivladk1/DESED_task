@@ -80,6 +80,16 @@ To test the weakly-supervised BEATS model:
 ```bash
 python train_pretrained.py --test_from_checkpoint /path/to/new_model.pt
 ```
+For comfort understanding how to apply the models, I have made this simple table:
+
+| **Model**        | **Input Shape**                                | **Description**                                     |
+|-------------------|-----------------------------------------------|-----------------------------------------------------|
+| **BEATs**         | **(batch_size, waveform_length)**             | Raw audio waveform input.                          |
+| **ASiTWrapper**   | **(batch_size, 1, 128, 592)**                 | Single-channel spectrogram input.                  |
+| **PaSST**         | **(batch_size, 1, 128, 998)**                 | Single-channel spectrogram input for audio tasks.  |
+| **M2DWrapper**    | **(batch_size, 1, num_freq_bins, num_time_bins)** | Mel spectrogram input with customizable dimensions.|
+| **BEATsModel**    | **(batch_size, waveform_length)**             | Raw audio waveform input (similar to BEATs).       |
+
 
 ### Results
 - BEATS Model provided by DESED_task:  
