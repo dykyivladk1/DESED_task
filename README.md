@@ -109,5 +109,7 @@ ATST, fPaSST I will add soon, but I have already processed them!
   **PSDS_scenario 1:** 0.463
 - Weakly-Supervised BEATS Model:  
   **PSDS_scenario 1:** 0.47
+ - ASiT model:
+  **PSDS_scenario 1:** 0.43
 - ATST, fPaSST, ASiT, M2D models soon...
 ---
